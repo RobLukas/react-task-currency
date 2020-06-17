@@ -1,9 +1,5 @@
-import { uuid } from 'uuid';
-
-export const addTransaction = (name, amounthOfCurrency) => ({
+export const addTransaction = (amounthOfCurrency) => ({
   type: 'ADD_TRANSACTIONS',
-  id: uuid(),
-  name: `transaction-${}`,
   amounthOfCurrency,
 });
 

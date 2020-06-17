@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import transactions from './transactionsReducer';
-import convert from './convertReducer';
+import transactionsReducer from './transactionsReducer';
+import exchangeReducer from './exchangeReducer';
 
 export default combineReducers({
-  transactions,
-  convert,
+  transactions: transactionsReducer,
+  exchange: exchangeReducer,
 });

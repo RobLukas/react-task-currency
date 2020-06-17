@@ -1,5 +1,4 @@
-const randomConverterEuroToPln = 4 + Math.random().toFixed(2);
-
-export const convertEuroToPln = (amounth) => {
+export const convertEuroToPln = (amounth = 1) => {
+  const randomConverterEuroToPln = (4 + Math.random()).toFixed(2);
   return amounth * randomConverterEuroToPln;
 };
